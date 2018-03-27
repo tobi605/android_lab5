@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,7 +12,7 @@
         android:name="app.polibuda.gimbus.android_lab5.Fragment1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="15dp" />
 
     <FrameLayout
         android:layout_width="wrap_content"
@@ -22,8 +21,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/fragment"
-        android:layout_above="@+id/button">
-    </FrameLayout>
+        android:layout_above="@+id/button"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -31,5 +29,5 @@
         android:id="@+id/button"
         android:text="@string/button_text"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true" />
 </RelativeLayout>

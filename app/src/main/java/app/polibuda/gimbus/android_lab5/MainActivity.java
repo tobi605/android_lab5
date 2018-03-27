@@ -1,9 +1,9 @@
 package app.polibuda.gimbus.android_lab5;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnOptio
     @Override
     public void onOptionPick(int option) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        switch (option){
-            case 1:{
+        switch (option) {
+            case 1: {
                 transaction.detach(fragment12);
                 transaction.attach(fragment11);
                 break;
             }
-            case 2:{
+            case 2: {
                 transaction.detach(fragment11);
                 transaction.attach(fragment12);
                 break;

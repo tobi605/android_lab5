@@ -1,9 +1,9 @@
 package app.polibuda.gimbus.android_lab5;
 
+import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity implements ActionBar.TabListener {
@@ -35,12 +35,12 @@ public class Main2Activity extends AppCompatActivity implements ActionBar.TabLis
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction ft) {
         int index = (int) tab.getTag();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        switch (index){
-            case 1:{
+        switch (index) {
+            case 1: {
                 transaction.attach(fragment11);
                 break;
             }
-            case 2:{
+            case 2: {
                 transaction.attach(fragment12);
                 break;
             }
@@ -52,12 +52,12 @@ public class Main2Activity extends AppCompatActivity implements ActionBar.TabLis
     public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
         int index = (int) tab.getTag();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        switch (index){
-            case 1:{
+        switch (index) {
+            case 1: {
                 transaction.detach(fragment11);
                 break;
             }
-            case 2:{
+            case 2: {
                 transaction.detach(fragment12);
                 break;
             }
@@ -67,6 +67,6 @@ public class Main2Activity extends AppCompatActivity implements ActionBar.TabLis
 
     @Override
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
-        Toast.makeText(getApplicationContext(),"You are already here :C", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "You are already here :C", Toast.LENGTH_SHORT).show();
     }
 }

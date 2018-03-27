@@ -23,11 +23,11 @@ public class Fragment1 extends Fragment implements RadioGroup.OnCheckedChangeLis
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
-        try{
+        try {
             appCompatActivity = (AppCompatActivity) context;
             listener = (OnOptionPickListener) context;
-        } catch (ClassCastException e){
-            throw new ClassCastException(appCompatActivity.toString()+" must implement OnOptionPickListener");
+        } catch (ClassCastException e) {
+            throw new ClassCastException(appCompatActivity.toString() + " must implement OnOptionPickListener");
         }
     }
 
@@ -52,19 +52,19 @@ public class Fragment1 extends Fragment implements RadioGroup.OnCheckedChangeLis
 
     @Override
     public void onCheckedChanged(RadioGroup radioGroup, int i) {
-        switch (i){
-            case R.id.radio1:{
+        switch (i) {
+            case R.id.radio1: {
                 listener.onOptionPick(1);
                 break;
             }
-            case R.id.radio2:{
+            case R.id.radio2: {
                 listener.onOptionPick(2);
                 break;
             }
         }
     }
 
-    public interface OnOptionPickListener{
+    public interface OnOptionPickListener {
         void onOptionPick(int option);
     }
 }
