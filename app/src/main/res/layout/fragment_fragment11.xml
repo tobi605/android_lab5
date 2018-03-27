@@ -13,4 +13,12 @@
         android:textSize="25sp"
         android:layout_centerHorizontal="true"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/duck"
+        android:layout_below="@+id/fragment11_title"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/duck_description" />
+
 </RelativeLayout>
