@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">android_lab5</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment12_title">Fragment 1.2</string>
+    <string name="fragment11_title">Fragment 1.1</string>
+    <string name="radio1_text">Opcja 1</string>
+    <string name="radio2_text">Opcja 2</string>
 </resources>

@@ -1,0 +1,17 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.polibuda.gimbus.android_lab5.Fragment12">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment12_title"
+        android:id="@+id/fragment12_title"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
