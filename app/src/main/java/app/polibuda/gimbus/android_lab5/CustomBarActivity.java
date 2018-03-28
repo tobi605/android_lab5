@@ -1,6 +1,5 @@
 package app.polibuda.gimbus.android_lab5;
 
-import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
