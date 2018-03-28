@@ -31,8 +31,10 @@ public class CustomBarActivity extends AppCompatActivity {
         final Fragment11 fragment11 = new Fragment11();
         final Fragment12 fragment12 = new Fragment12();
         transaction.add(R.id.custom_container, fragment11);
+        transaction.detach(fragment11);
         transaction.add(R.id.custom_container, fragment12);
         transaction.detach(fragment12);
+        transaction.attach(fragment11);
         transaction.commit();
         String[] fragments = new String[]{fragment11.toString(), fragment12.toString()};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, fragments);
