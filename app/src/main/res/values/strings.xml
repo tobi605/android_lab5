@@ -6,7 +6,8 @@
     <string name="fragment11_title">Fragment 1.1</string>
     <string name="radio1_text">Opcja 1</string>
     <string name="radio2_text">Opcja 2</string>
-    <string name="button_text">Go to other</string>
+    <string name="button_text">ActionBar</string>
     <string name="swan_description">A swan</string>
     <string name="duck_description">A duck</string>
+    <string name="button2_text">ViewPager</string>
 </resources>

@@ -25,5 +25,4 @@ public class Fragment12 extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_fragment12, container, false);
     }
-
 }

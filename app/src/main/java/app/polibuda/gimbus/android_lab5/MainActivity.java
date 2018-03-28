@@ -33,6 +33,14 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnOptio
                 startActivity(new Intent(MainActivity.this, Main2Activity.class));
             }
         });
+
+        Button button2 = findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ViewPagerAcitvity.class));
+            }
+        });
     }
 
     @Override
