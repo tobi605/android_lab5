@@ -7,9 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.Toast;
 
 public class Main2Activity extends AppCompatActivity implements ActionBar.TabListener {
-    Fragment11 fragment11;
-    Fragment12 fragment12;
-    FragmentTransaction fragmentTransaction;
+    private Fragment11 fragment11;
+    private Fragment12 fragment12;
+    private FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

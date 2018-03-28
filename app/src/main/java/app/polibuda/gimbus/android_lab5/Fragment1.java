@@ -17,8 +17,8 @@ import android.widget.RadioGroup;
  */
 public class Fragment1 extends Fragment implements RadioGroup.OnCheckedChangeListener {
 
-    AppCompatActivity appCompatActivity;
-    OnOptionPickListener listener;
+    private AppCompatActivity appCompatActivity;
+    private OnOptionPickListener listener;
 
     @Override
     public void onAttach(Context context) {

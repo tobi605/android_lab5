@@ -8,9 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements Fragment1.OnOptionPickListener {
-    Fragment11 fragment11;
-    Fragment12 fragment12;
-    FragmentTransaction fragmentTransaction;
+    private Fragment11 fragment11;
+    private Fragment12 fragment12;
+    private FragmentTransaction fragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
