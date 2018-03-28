@@ -26,5 +26,8 @@ public class Fragment11 extends Fragment {
         return inflater.inflate(R.layout.fragment_fragment11, container, false);
     }
 
-    public String getName(){ return "Fragment 1.1";}
+    @Override
+    public String toString() {
+        return "Fragment 1.1";
+    }
 }

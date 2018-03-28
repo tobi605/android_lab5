@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 class FragmentAdapter extends FragmentPagerAdapter {
     private Fragment[] fragments;
 
-    public FragmentAdapter(FragmentManager fm, Fragment[] fragments) {
+    FragmentAdapter(FragmentManager fm, Fragment[] fragments) {
         super(fm);
         this.fragments = fragments;
     }
@@ -29,12 +29,12 @@ class FragmentAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         String title = "";
-        switch (position){
-            case 0:{
+        switch (position) {
+            case 0: {
                 title = "Fragment 1.1";
                 break;
             }
-            case 1:{
+            case 1: {
                 title = "Fragment 1.2";
                 break;
             }

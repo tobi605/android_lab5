@@ -10,4 +10,6 @@
     <string name="swan_description">A swan</string>
     <string name="duck_description">A duck</string>
     <string name="button2_text">ViewPager</string>
+    <string name="button3_text">Custom bar</string>
+    <string name="bar_button_text">Hello</string>
 </resources>
