@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements Fragment1.OnOptio
         fragmentTransaction.detach(fragment11);
         fragmentTransaction.add(R.id.fragment_container, fragment12);
         fragmentTransaction.detach(fragment12);
+        fragmentTransaction.attach(fragment11);
         fragmentTransaction.commit();
 
         Button button = findViewById(R.id.button);
