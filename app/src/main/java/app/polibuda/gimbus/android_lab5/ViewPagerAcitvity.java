@@ -10,8 +10,8 @@ import android.widget.RelativeLayout;
 
 public class ViewPagerAcitvity extends AppCompatActivity {
 
-    private void initUI(int orienation){
-        if(orienation == Configuration.ORIENTATION_PORTRAIT){
+    private void initUI(int orienation) {
+        if (orienation == Configuration.ORIENTATION_PORTRAIT) {
             setContentView(R.layout.activity_view_pager_acitvity);
             Fragment11 fragment11 = new Fragment11();
             Fragment12 fragment12 = new Fragment12();
@@ -19,8 +19,7 @@ public class ViewPagerAcitvity extends AppCompatActivity {
             FragmentAdapter adapter = new FragmentAdapter(getSupportFragmentManager(), fragments);
             ViewPager viewPager = findViewById(R.id.view_pager);
             viewPager.setAdapter(adapter);
-        }
-        else{
+        } else {
             setContentView(R.layout.activity_view_pager_landscape);
         }
     }
@@ -34,7 +33,7 @@ public class ViewPagerAcitvity extends AppCompatActivity {
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
-        RelativeLayout layout= findViewById(R.id.view_pager_port);
+        RelativeLayout layout = findViewById(R.id.view_pager_port);
         layout.removeAllViews();
         RelativeLayout layout2 = findViewById(R.id.view_pager_land);
         layout2.removeAllViews();

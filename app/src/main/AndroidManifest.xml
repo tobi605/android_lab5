@@ -17,8 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".ViewPagerAcitvity"
-            android:configChanges="orientation"/>
+        <activity
+            android:name=".ViewPagerAcitvity"
+            android:configChanges="orientation" />
         <activity android:name=".CustomBarActivity" />
     </application>
 
