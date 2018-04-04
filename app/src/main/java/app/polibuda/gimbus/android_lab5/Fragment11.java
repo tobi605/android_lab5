@@ -13,6 +13,7 @@ import android.view.ViewGroup;
  */
 public class Fragment11 extends Fragment {
 
+    private static String orientation = "Portrait";
 
     public Fragment11() {
         // Required empty public constructor
@@ -30,4 +31,8 @@ public class Fragment11 extends Fragment {
     public String toString() {
         return "Fragment 1.1";
     }
+
+    public static String getOrientation(){return orientation;}
+
+    public static void changeOrientation(String orient){ orientation = orient;}
 }
